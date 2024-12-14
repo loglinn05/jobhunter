@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Sulphur+Point:wght@300;400;700&display=swap");
+@import url("https://necolas.github.io/normalize.css/8.0.1/normalize.css");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  @apply text-lg;
+  @apply text-orange-800;
+}
+
+html *:not(.pi) {
+  @apply !font-text;
+}
+
+a {
+  @apply no-underline;
+  @apply text-orange-600;
+  @apply transition-all;
+  @apply duration-500;
+}
+
+a:hover {
+  @apply text-amber-700;
+}
