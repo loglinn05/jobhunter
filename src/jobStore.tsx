@@ -7,7 +7,7 @@ export async function getJobs(
   setLoading: React.Dispatch<React.SetStateAction<boolean>>
 ) {
   try {
-    const response = await fetch(`/api/jobs${limit ? "?_limit=3" : ""}`);
+    const response = await fetch(`/api/jobs${limit ? "?limit=3" : ""}`);
     const data = await response.json();
     setJobs(data);
   } catch (error) {
